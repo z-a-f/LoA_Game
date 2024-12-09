@@ -217,5 +217,9 @@ class Board:
         if player is None:
             return not self.is_empty(position)
         return self.is_piece(position, player)
+    
+    @property
+    def shape(self):
+        return self.board.shape
 
 
